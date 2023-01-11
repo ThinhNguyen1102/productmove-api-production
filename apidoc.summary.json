@@ -1,0 +1,576 @@
+[
+  {
+    "name": "POST register",
+    "Des": "Tạo tài khoản, chỉ admin mới tạo được",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "name", "value": "admin1", "type": "text" },
+          { "key": "email", "value": "admin1@bigcorp.com", "type": "text" },
+          { "key": "password", "value": "123456", "type": "text" },
+          {
+            "key": "address",
+            "value": "Yen Hoa - Cau Giay - Ha Noi",
+            "type": "text"
+          },
+          { "key": "role", "value": "1", "type": "text" },
+          { "key": "phone_number", "value": "0887723456", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/auth/register"
+    }
+  },
+  {
+    "name": "POST login",
+    "Des": "Đăng nhập tài khoản",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "email", "value": "admin1@bigcorp.com", "type": "text" },
+          { "key": "password", "value": "123456", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/auth/login"
+    }
+  },
+  {
+    "name": "PL GET a product line",
+    "Des": "Lấy thông tin dòng sản phẩm theo mã dòng sản phẩm",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/productlines/1"
+    }
+  },
+  {
+    "name": "PL GET all product line",
+    "Des": "Lấy tất cả các dòng sản phẩm",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/productlines"
+    }
+  },
+  {
+    "name": "PL GET product line own",
+    "Des": "Lấy tẩt cả dòng sản phẩm có theo mã đơn vị ",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/productlines/own"
+    }
+  },
+  {
+    "name": "PL POST a product line",
+    "Des": "Tạo dòng sản phẩm mới, chỉ admin mới tạo được",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "model", "value": "phone14-ProMax", "type": "text" },
+          { "key": "ram", "value": "6", "type": "text" },
+          { "key": "memory", "value": "1024", "type": "text" },
+          { "key": "color", "value": "vang", "type": "text" },
+          {
+            "key": "description",
+            "value": "dong dien thoai cao cap nhat moi nhat cua apple",
+            "type": "text"
+          },
+          { "key": "price", "value": "1499", "type": "text" },
+          {
+            "key": "imageUrl",
+            "value": "https://res.cloudinary.com/dkdwgdq4i/image/upload/v1672396306/res/images/w5clmx9eqyo1gjn1eong.jpg",
+            "type": "text"
+          }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/productlines"
+    }
+  },
+  {
+    "name": "PL EDIT a product line",
+    "Des": "Chỉnh sửa thông tin dòng sản phẩm, chỉ admin mới sửa được",
+    "request": {
+      "method": "PUT",
+      "body": { "mode": "formdata", "formdata": [] },
+      "url": "https://productmove.onrender.com/api/v1/productlines/6"
+    }
+  },
+  {
+    "name": "PL DELETE a product line",
+    "Des": "Xóa dòng sản phẩm theo mã, chỉ admin mới xóa được",
+    "request": {
+      "method": "DELETE",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/productlines/1"
+    }
+  },
+  {
+    "name": "WH POST a warehouse",
+    "Des": "Tạo kho hàng",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          {
+            "key": "address",
+            "value": "Mai Dich - Cau Giay - Ha Noi",
+            "type": "text"
+          },
+          { "key": "phone_number", "value": "0335565281", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/warehouses"
+    }
+  },
+  {
+    "name": "WH GET a warehouse with id",
+    "Des": "Lấy thông tin kho hàng theo mã kho hàng",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/warehouses/1"
+    }
+  },
+  {
+    "name": "WH GET warehouses own",
+    "Des": "lấy thông tin kho hàng của đơn vị hiện đăng nhập",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/warehouses/own"
+    }
+  },
+  {
+    "name": "PRO POST products",
+    "Des": "Tạo lô hàng gồm nhiều sản phẩm",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "productLineId", "value": "4", "type": "text" },
+          { "key": "warehouseId", "value": "3", "type": "text" },
+          { "key": "quantity", "value": "20", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/products"
+    }
+  },
+  {
+    "name": "PRO POST sell product",
+    "Des": "Bán 1 sản phẩm",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "prodId", "value": "P-299026", "type": "text" },
+          {
+            "key": "customerName",
+            "value": "Nguyen Thi Minh Thuy",
+            "type": "text"
+          },
+          {
+            "key": "customerAddress",
+            "value": "PVD - Cau Giay - Ha Noi",
+            "type": "text"
+          },
+          { "key": "customerPhone", "value": "0349844507", "type": "text" },
+          {
+            "key": "customerEmail",
+            "value": "thuy@vnu.edu.vn",
+            "type": "text"
+          },
+          { "key": "oldCustomerId", "value": "5", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/products/sell"
+    }
+  },
+  {
+    "name": "PRO POST guarentee product",
+    "Des": "Bảo hành sản phẩm",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "prodId", "value": "P-358316", "type": "text" },
+          { "key": "errorDescription", "value": "hong pin", "type": "text" },
+          { "key": "typeErrorCode", "value": "ERR-BA", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/products/guarentee"
+    }
+  },
+  {
+    "name": "PRO POST move product",
+    "Des": "Tạo đơn vận chuyển sản phẩm",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "unitId", "value": "4", "type": "text" },
+          { "key": "warehouseId", "value": "3", "type": "text" },
+          { "key": "productId", "value": "P-166120", "type": "text" },
+          { "key": "statusCode", "value": "STT-05", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/products/move"
+    }
+  },
+  {
+    "name": "PRO POST accept receive product",
+    "Des": "Xác nhập nhận sản phẩm",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "transportId", "value": "1", "type": "text" },
+          { "key": "isAccept", "value": "true", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/products/accept"
+    }
+  },
+  {
+    "name": "PRO POST guarentee fixed",
+    "Des": "Xác nhận bảo hành xong sản phẩm",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "prodId", "value": "P-204444", "type": "text" },
+          { "key": "isFixed", "value": "true", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/products/guarentee/fixed"
+    }
+  },
+  {
+    "name": "PRO GET product by product line own",
+    "Des": "Lấy tất cả mã sản phẩm theo dòng sản phẩm của đơn vị đang đăng nhập",
+    "request": {
+      "method": "GET",
+      "body": { "mode": "raw", "raw": "" },
+      "url": "https://productmove.onrender.com/api/v1/products/productline/4"
+    }
+  },
+  {
+    "name": "PRO GET sold product own",
+    "Des": "Lấy tất cả sản phẩm đã bán của đơn vị đang đăng nhập",
+    "request": {
+      "method": "GET",
+      "body": { "mode": "raw", "raw": "" },
+      "url": "https://productmove.onrender.com/api/v1/products/sold/own"
+    }
+  },
+  {
+    "name": "PRO-Tran get send transport own",
+    "Des": "Lấy tất cả đơn vận chuyển mà đơn vị hiện hành là người gửi",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/transports/product/own/send"
+    }
+  },
+  {
+    "name": "PRO-Tran get receive transport own",
+    "Des": "Lấy tất cả đơn vận chuyển mà đơn vị hiện hành là người nhận",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/transports/product/own/receive"
+    }
+  },
+  {
+    "name": "PK POST move package",
+    "Des": "Tạo đơn vận chuyển lô hàng",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "unitId", "value": "9", "type": "text" },
+          { "key": "packageId", "value": "PK-845496", "type": "text" },
+          { "key": "statusCode", "value": "STT-02", "type": "text" },
+          { "key": "warehouseId", "value": "9", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/packages/move"
+    }
+  },
+  {
+    "name": "PK POST recall package",
+    "Des": "Tạo ghi nhận triệu hồi lô hàng và sản phẩm của lô hàng đó",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "packageId", "value": "PK-352307", "type": "text" },
+          {
+            "key": "errorDescription",
+            "value": "hong loa roi",
+            "type": "text"
+          },
+          { "key": "typeErrorCode", "value": "ERR-ST", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/packages/recall"
+    }
+  },
+  {
+    "name": "PK GET package with unit created",
+    "Des": "Lấy tất cả lô hàng mà đơn vị hiện hành đã tạo",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/packages/factory/created"
+    }
+  },
+  {
+    "name": "PK GET package with PL unit",
+    "Des": "Lấy tất cả package theo dòng sản phẩm của đơn vị hiện hành",
+    "request": {
+      "method": "GET",
+      "body": { "mode": "formdata", "formdata": [] },
+      "url": "https://productmove.onrender.com/api/v1/packages/own"
+    }
+  },
+  {
+    "name": "PK-Tran POST accept recieve package",
+    "Des": "Xác nhập nhận đơn vận chuyển lô hàng",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "transportId", "value": "10", "type": "text" },
+          { "key": "isAccept", "value": "true", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/packages/accept"
+    }
+  },
+  {
+    "name": "PK-Tran get send transport own",
+    "Des": "Lấy tất cả các đơn vận chuyển mà đơn vị hiện hành là người gửi",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/transports/package/own/send"
+    }
+  },
+  {
+    "name": "PK-Tran get receive  transport own",
+    "Des": "Lấy tất cả đơn vận chuyển mà đơn vị hiện hành là người nhận",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/transports/package/own/receive"
+    }
+  },
+  {
+    "name": "POST refresh_token",
+    "Des": "lấy lại token duy trì đăng nhập",
+    "request": {
+      "auth": null,
+      "method": "POST",
+      "body": { "mode": "raw", "raw": "" },
+      "url": "https://productmove.onrender.com/api/v1/auth/refresh_token"
+    }
+  },
+  {
+    "name": "U get all users",
+    "Des": "Lấy tất cả thông tin của users",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/users"
+    }
+  },
+  {
+    "name": "U get all users by role",
+    "Des": "Lấy tất cả thông tin của users theo chức năng",
+    "request": {
+      "method": "GET",
+      "body": { "mode": "raw", "raw": "" },
+      "url": "https://productmove.onrender.com/api/v1/users/role/3"
+    }
+  },
+  {
+    "name": "U change password with userId",
+    "Des": "Thay đổi password của user, chỉ admin mới đổi được",
+    "request": {
+      "method": "PUT",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "email", "value": "dlbh02@bigcorp.com", "type": "text" },
+          { "key": "newPassword", "value": "1121212", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/users/2"
+    }
+  },
+  {
+    "name": "U delete user with id",
+    "Des": "Xóa user, chỉ admin mới xóa được",
+    "request": {
+      "method": "DELETE",
+      "body": { "mode": "formdata", "formdata": [] },
+      "url": "https://productmove.onrender.com/api/v1/users/4"
+    }
+  },
+  {
+    "name": "REQ-PK  POST create request",
+    "Des": "tạo một yêu cầu",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "receiverId", "value": "3", "type": "text" },
+          {
+            "key": "content",
+            "value": "iphone 13 so luong 20 cai",
+            "type": "text"
+          }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/requests"
+    }
+  },
+  {
+    "name": "REQ-PK POST accept recieve package",
+    "Des": "Xác nhận yêu cầu đến",
+    "request": {
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "requestId", "value": "8", "type": "text" },
+          { "key": "isAccept", "value": "true", "type": "text" }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/requests/accept"
+    }
+  },
+  {
+    "name": "REQ-PK GET get send request own",
+    "Des": "Lấy tất cả yêu cầu mà đơn vị hiện hành là người gửi",
+    "request": {
+      "method": "GET",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "receiverId", "value": "2", "type": "text" },
+          { "key": "productLineId", "value": "1", "type": "text" },
+          { "key": "quantity", "value": "20", "type": "text" },
+          {
+            "key": "description",
+            "value": "cho xin vai cai iphone de",
+            "type": "text"
+          }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/requests/send"
+    }
+  },
+  {
+    "name": "REQ-PK GET get receive request own",
+    "Des": "Lấy tất cả yêu cầu mà đơn vị hiện hành là người nhận",
+    "request": {
+      "method": "GET",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          { "key": "receiverId", "value": "2", "type": "text" },
+          { "key": "productLineId", "value": "1", "type": "text" },
+          { "key": "quantity", "value": "20", "type": "text" },
+          {
+            "key": "description",
+            "value": "cho xin vai cai iphone de",
+            "type": "text"
+          }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/requests/receive"
+    }
+  },
+  {
+    "name": "ADMIN get all unit info",
+    "Des": "Lấy tất cả thông tin của các user",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/statistics/admin/unit"
+    }
+  },
+  {
+    "name": "ADMIN get statistics product",
+    "Des": "thống kê về sản phẩm theo dòng sản phẩm của admin",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/statistics/admin/product"
+    }
+  },
+  {
+    "name": "AGENT get statistics product",
+    "Des": "thống kê về sản phẩm theo dòng sản phẩm của đại lý bán hàng",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/statistics/agent/product"
+    }
+  },
+  {
+    "name": "FACT get statistics product",
+    "Des": "thống kê về sản phẩm theo dòng sản phẩm của cơ sở sản xuất",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/statistics/factory/product"
+    }
+  },
+  {
+    "name": "CENTER get statistics product",
+    "Des": "thống kê về sản phẩm theo dòng sản phẩm của trung tâm bảo hành",
+    "request": {
+      "method": "GET",
+      "body": null,
+      "url": "https://productmove.onrender.com/api/v1/statistics/center/product"
+    }
+  },
+  {
+    "name": "UPLOAD image",
+    "Des": "tải ảnh lên cloud",
+    "request": {
+      "auth": null,
+      "method": "POST",
+      "body": {
+        "mode": "formdata",
+        "formdata": [
+          {
+            "key": "image",
+            "type": "file",
+            "src": "/C:/Users/thinh/OneDrive/Máy tính/PM-image/iphone14-pro-max-vang.jpg"
+          }
+        ]
+      },
+      "url": "https://productmove.onrender.com/api/v1/image/upload"
+    }
+  }
+]

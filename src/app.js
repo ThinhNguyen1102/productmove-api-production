@@ -51,8 +51,9 @@ app.use(
 app.use("/res/images", express.static(path.join(__dirname, "res", "images")));
 
 app.use("/api/v1", appRoute);
+
 app.get("*", (req, res, next) => {
-  res.status(201).sendFile(path.join(__dirname, "..", "apidoc.json"));
+  res.status(201).sendFile(path.join(__dirname, "..", "apidoc.summary.json"));
 });
 
 app.use((error, req, res, next) => {
