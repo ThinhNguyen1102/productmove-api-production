@@ -52,9 +52,7 @@ app.use("/res/images", express.static(path.join(__dirname, "res", "images")));
 
 app.use("/api/v1", appRoute);
 app.get("*", (req, res, next) => {
-  res.status(201).json({
-    message: "hello",
-  });
+  res.status(201).sendFile(path.join(__dirname, "..", "apidoc.json"));
 });
 
 app.use((error, req, res, next) => {

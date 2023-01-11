@@ -29,7 +29,7 @@
           { "key": "phone_number", "value": "0887723456", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/auth/register"
+      "url": "https://productmove.onrender.com/api/v1/auth/register"
     }
   },
   {
@@ -54,7 +54,7 @@
           { "key": "password", "value": "123456", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/auth/login"
+      "url": "https://productmove.onrender.com/api/v1/auth/login"
     }
   },
   {
@@ -73,7 +73,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/productlines/1"
+      "url": "https://productmove.onrender.com/api/v1/productlines/1"
     }
   },
   {
@@ -92,7 +92,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/productlines"
+      "url": "https://productmove.onrender.com/api/v1/productlines"
     }
   },
   {
@@ -111,7 +111,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/productlines/own"
+      "url": "https://productmove.onrender.com/api/v1/productlines/own"
     }
   },
   {
@@ -149,7 +149,7 @@
           }
         ]
       },
-      "url": "localhost:8080/api/v1/productlines"
+      "url": "https://productmove.onrender.com/api/v1/productlines"
     }
   },
   {
@@ -168,7 +168,7 @@
       },
       "method": "PUT",
       "body": { "mode": "formdata", "formdata": [] },
-      "url": "localhost:8080/api/v1/productlines/6"
+      "url": "https://productmove.onrender.com/api/v1/productlines/6"
     }
   },
   {
@@ -187,7 +187,7 @@
       },
       "method": "DELETE",
       "body": null,
-      "url": "localhost:8080/api/v1/productlines/1"
+      "url": "https://productmove.onrender.com/api/v1/productlines/1"
     }
   },
   {
@@ -216,7 +216,7 @@
           { "key": "phone_number", "value": "0335565281", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/warehouses"
+      "url": "https://productmove.onrender.com/api/v1/warehouses"
     }
   },
   {
@@ -235,7 +235,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/warehouses/1"
+      "url": "https://productmove.onrender.com/api/v1/warehouses/1"
     }
   },
   {
@@ -254,7 +254,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/warehouses/own"
+      "url": "https://productmove.onrender.com/api/v1/warehouses/own"
     }
   },
   {
@@ -280,7 +280,7 @@
           { "key": "quantity", "value": "20", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/products"
+      "url": "https://productmove.onrender.com/api/v1/products"
     }
   },
   {
@@ -321,7 +321,7 @@
           { "key": "oldCustomerId", "value": "5", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/products/sell"
+      "url": "https://productmove.onrender.com/api/v1/products/sell"
     }
   },
   {
@@ -347,7 +347,7 @@
           { "key": "typeErrorCode", "value": "ERR-BA", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/products/guarentee"
+      "url": "https://productmove.onrender.com/api/v1/products/guarentee"
     }
   },
   {
@@ -374,7 +374,7 @@
           { "key": "statusCode", "value": "STT-05", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/products/move"
+      "url": "https://productmove.onrender.com/api/v1/products/move"
     }
   },
   {
@@ -399,7 +399,7 @@
           { "key": "isAccept", "value": "true", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/products/accept"
+      "url": "https://productmove.onrender.com/api/v1/products/accept"
     }
   },
   {
@@ -424,7 +424,7 @@
           { "key": "isFixed", "value": "true", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/products/guarentee/fixed"
+      "url": "https://productmove.onrender.com/api/v1/products/guarentee/fixed"
     }
   },
   {
@@ -443,7 +443,7 @@
       },
       "method": "GET",
       "body": { "mode": "raw", "raw": "" },
-      "url": "localhost:8080/api/v1/products/productline/4"
+      "url": "https://productmove.onrender.com/api/v1/products/productline/4"
     }
   },
   {
@@ -462,7 +462,7 @@
       },
       "method": "GET",
       "body": { "mode": "raw", "raw": "" },
-      "url": "localhost:8080/api/v1/products/sold/own"
+      "url": "https://productmove.onrender.com/api/v1/products/sold/own"
     }
   },
   {
@@ -481,7 +481,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/transports/product/own/send"
+      "url": "https://productmove.onrender.com/api/v1/transports/product/own/send"
     }
   },
   {
@@ -500,7 +500,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/transports/product/own/receive"
+      "url": "https://productmove.onrender.com/api/v1/transports/product/own/receive"
     }
   },
   {
@@ -527,7 +527,7 @@
           { "key": "warehouseId", "value": "9", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/packages/move"
+      "url": "https://productmove.onrender.com/api/v1/packages/move"
     }
   },
   {
@@ -557,7 +557,7 @@
           { "key": "typeErrorCode", "value": "ERR-ST", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/packages/recall"
+      "url": "https://productmove.onrender.com/api/v1/packages/recall"
     }
   },
   {
@@ -576,7 +576,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/packages/factory/created"
+      "url": "https://productmove.onrender.com/api/v1/packages/factory/created"
     }
   },
   {
@@ -595,7 +595,7 @@
       },
       "method": "GET",
       "body": { "mode": "formdata", "formdata": [] },
-      "url": "localhost:8080/api/v1/packages/own"
+      "url": "https://productmove.onrender.com/api/v1/packages/own"
     }
   },
   {
@@ -620,7 +620,7 @@
           { "key": "isAccept", "value": "true", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/packages/accept"
+      "url": "https://productmove.onrender.com/api/v1/packages/accept"
     }
   },
   {
@@ -639,7 +639,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/transports/package/own/send"
+      "url": "https://productmove.onrender.com/api/v1/transports/package/own/send"
     }
   },
   {
@@ -658,7 +658,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/transports/package/own/receive"
+      "url": "https://productmove.onrender.com/api/v1/transports/package/own/receive"
     }
   },
   {
@@ -668,7 +668,7 @@
       "auth": null,
       "method": "POST",
       "body": { "mode": "raw", "raw": "" },
-      "url": "localhost:8080/api/v1/auth/refresh_token"
+      "url": "https://productmove.onrender.com/api/v1/auth/refresh_token"
     }
   },
   {
@@ -687,7 +687,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/users"
+      "url": "https://productmove.onrender.com/api/v1/users"
     }
   },
   {
@@ -706,7 +706,7 @@
       },
       "method": "GET",
       "body": { "mode": "raw", "raw": "" },
-      "url": "localhost:8080/api/v1/users/role/3"
+      "url": "https://productmove.onrender.com/api/v1/users/role/3"
     }
   },
   {
@@ -731,7 +731,7 @@
           { "key": "newPassword", "value": "1121212", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/users/2"
+      "url": "https://productmove.onrender.com/api/v1/users/2"
     }
   },
   {
@@ -750,7 +750,7 @@
       },
       "method": "DELETE",
       "body": { "mode": "formdata", "formdata": [] },
-      "url": "localhost:8080/api/v1/users/4"
+      "url": "https://productmove.onrender.com/api/v1/users/4"
     }
   },
   {
@@ -779,7 +779,7 @@
           }
         ]
       },
-      "url": "localhost:8080/api/v1/requests"
+      "url": "https://productmove.onrender.com/api/v1/requests"
     }
   },
   {
@@ -804,7 +804,7 @@
           { "key": "isAccept", "value": "true", "type": "text" }
         ]
       },
-      "url": "localhost:8080/api/v1/requests/accept"
+      "url": "https://productmove.onrender.com/api/v1/requests/accept"
     }
   },
   {
@@ -835,7 +835,7 @@
           }
         ]
       },
-      "url": "localhost:8080/api/v1/requests/send"
+      "url": "https://productmove.onrender.com/api/v1/requests/send"
     }
   },
   {
@@ -866,7 +866,7 @@
           }
         ]
       },
-      "url": "localhost:8080/api/v1/requests/receive"
+      "url": "https://productmove.onrender.com/api/v1/requests/receive"
     }
   },
   {
@@ -885,7 +885,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/statistics/admin/unit"
+      "url": "https://productmove.onrender.com/api/v1/statistics/admin/unit"
     }
   },
   {
@@ -904,7 +904,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/statistics/admin/product"
+      "url": "https://productmove.onrender.com/api/v1/statistics/admin/product"
     }
   },
   {
@@ -923,7 +923,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/statistics/agent/product"
+      "url": "https://productmove.onrender.com/api/v1/statistics/agent/product"
     }
   },
   {
@@ -942,7 +942,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/statistics/factory/product"
+      "url": "https://productmove.onrender.com/api/v1/statistics/factory/product"
     }
   },
   {
@@ -961,7 +961,7 @@
       },
       "method": "GET",
       "body": null,
-      "url": "localhost:8080/api/v1/statistics/center/product"
+      "url": "https://productmove.onrender.com/api/v1/statistics/center/product"
     }
   },
   {
@@ -980,7 +980,7 @@
           }
         ]
       },
-      "url": "localhost:8080/api/v1/image/upload"
+      "url": "https://productmove.onrender.com/api/v1/image/upload"
     }
   }
 ]
